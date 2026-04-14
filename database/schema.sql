@@ -1,0 +1,12 @@
+CREATE DATABASE IF NOT EXISTS frota_db;
+
+USE frota_db;
+
+CREATE TABLE IF NOT EXISTS frota (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    ano INT NOT NULL,
+    tipo VARCHAR(20) NOT NULL,
+    quantidade INT NOT NULL,
+    estado VARCHAR(2) NOT NULL,
+    total_ano INT NOT NULL
+);
